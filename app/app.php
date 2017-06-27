@@ -16,7 +16,7 @@
         $all_tasks = Task::getAll();
 
         if (!empty($all_tasks)) {
-            $output = $output . "
+            $output .= "
                 <h1>To Do List</h1>
                 <p>Here are all your tasks:</p>
                 ";
@@ -27,7 +27,7 @@
 
         }
 
-        $output = $output . "
+        $output .= "
             <form action='/tasks' method='post'>
                 <label for='description'>Task Description</label>
                 <input id='description' name='description' type='text'>
