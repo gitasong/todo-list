@@ -36,6 +36,12 @@
             </form>
         ";
 
+        $output .= "
+            <form action='/delete_tasks' method='post'>
+                <button type='submit'>delete</button>
+            </form>
+        ";
+
         return $output;
     });
 
