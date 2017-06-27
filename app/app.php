@@ -55,5 +55,15 @@
         ";
     });
 
+    $app->post("/delete_tasks", function() {
+
+        Task::deleteAll();
+
+        return "
+            <h1>List Cleared!</h1>
+            <p><a href='/'>Home</a></p>
+        ";
+    });
+
     return $app;
 ?>
