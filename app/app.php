@@ -5,7 +5,8 @@
     $app = new Silex\Application();
 
     $app->get("/", function() {
-
+        return "Home";
+    });
 
 
 
